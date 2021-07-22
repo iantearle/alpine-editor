@@ -4,6 +4,7 @@ import { wrapInList } from "prosemirror-schema-list";
 export default function initNodes(editor) {
     editor.commandsManager.addCommand('heading', {action: setBlockType, activatable: true,});
     editor.commandsManager.addCommand('paragraph', {action: setBlockType, activatable: true,});
+    editor.commandsManager.addCommand('horizontal_rule', {action: setBlockType, activatable: true,});
     editor.commandsManager.addCommand('blockquote', {action: wrapIn, activatable: true,});
     editor.commandsManager.addCommand('code_block', {action: setBlockType, activatable: true,});
 
